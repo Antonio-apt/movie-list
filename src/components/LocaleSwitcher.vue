@@ -13,7 +13,7 @@
 export default {
   name: 'LocaleSwitcher',
   data() {
-    return { locales: ['fr', 'en'] };
+    return { locales: ['pt-br', 'en'] };
   },
 };
 </script>

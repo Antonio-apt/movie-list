@@ -1,6 +1,8 @@
 <template>
   <header class="header">
-    <LocaleSwitcher />
+    <div class="header__content">
+      <LocaleSwitcher />
+    </div>
   </header>
 </template>
 
@@ -18,6 +20,16 @@ export default {
 };
 </script>
 
-<style>
-
+<style lang="scss">
+.header {
+  flex-shrink: 0;
+  min-height: 30px;
+  background-color: $dark-blue;
+  color: white;
+  &__content {
+    display: flex;
+    height: 100%;
+    padding: 1rem;
+  }
+}
 </style>

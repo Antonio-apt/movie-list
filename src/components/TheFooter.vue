@@ -26,7 +26,7 @@ export default {
 .footer {
   $self: &;
   flex-shrink: 0;
-  margin-top: 8rem;
+  // margin-top: 8rem;
   height: 100px;
   background-color: $dark-blue;
   padding: 1rem 5rem 0;
