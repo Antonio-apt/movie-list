@@ -1,9 +1,21 @@
 <template>
-  <nav>
-
-  </nav>
-  <router-view/>
+  <TheHeader />
+  <router-view class="main"/>
+  <TheFooter/>
 </template>
+
+<script>
+import TheHeader from '@/components/TheHeader.vue';
+import TheFooter from '@/components/TheFooter.vue';
+
+export default {
+  name: 'App',
+  components: {
+    TheHeader,
+    TheFooter,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
@@ -11,19 +23,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+  .main {
+    flex: 1 0 auto;
   }
 }
 </style>
